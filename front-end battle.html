@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show + Tell</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .train {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 169px;
+            color: #333;
+            animation: moveTrain 5s linear infinite;
+        }
+
+        @keyframes moveTrain {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-header {
+            font-weight: bold;
+        }
+
+        .right-header {
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        .right-header nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .right-header nav ul li {
+            margin-right: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .start-project {
+            border-radius: 79px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .moving-text {
+            font-size: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .background-video {
+            position: center;
+            top: 0;
+            right: 0;
+            width: 30vw;
+            height: 30vh;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .background-video iframe {
+            width: 50vw;
+            height: 280px;
+            border: none;
+        }
+
+        .main-content {
+            padding: 50px;
+            font-family: Roboto;
+            font-size: 25px;
+            color: #333;
+        }
+
+        .scroll-explore {
+            background-color: #fff;
+            color: #000;
+            font-family: Roboto, sans-serif;
+            text-decoration: underline;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .work-heading {
+            font-size: 200px;
+            color: #000;
+        }
+
+        .show-tell {
+            font-family: Roboto;
+            font-style: normal;
+            font-size: 19px;
+        }
+
+        .image-1 {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left-header">
+            <span class="show-tell">Show + Tell</span>
+        </div>
+        <div class="right-header">
+            <nav>
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#">Branding</a>
+                            <a href="#">Website & digital products</a>
+                            <a href="#">Immersive</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Sectors</a>
+                        <div class="dropdown-content">
+                            <a href="#">Energy & utilities</a>
+                            <a href="#">Retail & commerce</a>
+                            <a href="#">Investment firms</a>
+                            <a href="#">Food & manufacturing</a>
+                            <a href="#">Saas and technology</a>
+                            <a href="#">Property, Developments & Proptech</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Insights</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <button class="start-project">Start a project</button>
+        </div>
+    </header>
+    <div class="train">We make every interaction count.</div>
+    <div class="background-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7M4n3YB_-jg?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <section class="main-content">
+        <p>A digital-first branding & web product agency expertly creating impactful experiences for high-growth
+            brands.</p>
+        <button class="scroll-explore">Scroll + Explore</button>
+        <h1>Show + Tell is a DIGITAL-FIRST branding and technology agency, enabling companies to connect with their
+            audience, extend their reach and enjoy greater COMMERCIAL success.</h1>
+        <h2 class="work-heading">Work</h2>
+        <div class="d-flex flex-row justify-content-end">
+            <img src="file:///C:/Users/user/Documents/image-1.webp" class="image-1" />
+            <img src="file:///C:/Users/user/Documents/image-2.webp" class="image-1" />
+            <img src="file:///C:/Users/user/AppData/Local/Temp/b45f49a2-6e3d-4a47-91f0-a6bf36c7f80d_Problem%20Statement(Round-1)%20(1).zip.80d/image-3.webp" class="image-1" />
+            <img src="file:///C:/Users/user/AppData/Local/Temp/2cf0c764-ba54-4bb8-bca2-44275a0fe200_Problem%20Statement(Round-1)%20(1).zip.200/image-4.webp" class="image-1" />
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
